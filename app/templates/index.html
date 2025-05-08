@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaterAI</title>
+
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+</head>
+<body>
+	<div class="wrapper">
+		<div class="titleContainer">
+			<h1>Welcome to TaterAI 🍠</h1>	
+			<h3>The Potatoe Prompt Machine, Meant To Be Light Weight And Functional </h3>
+			<h3>Designed To Run On Even The Slowest Potatoes</h3>
+		</div>
+		<main>
+			<section class="OutputSection" >
+				<div class="OutputContainer">
+					<div class="MockPrompt">
+						<p><strong>USER:</strong> can you give me a fake response?</p>
+					</div>
+					<div class="MockResponse">
+				  		<p><strong>TaterAI:</strong> Here's a fake response just to test layout. 🍟</p>
+					</div>
+				</div>
+				
+			</section>
+			<br><br>
+			<section class="container" >
+				<div class="FormContainer">
+					<form method="post" action="/prompt">
+						<div class="PromptContainer">
+							<label for="promptInput" class="visuallyHidden">Your prompt</label>
+							<span class="emojiPrefix">🍠</span>
+							<input type="text" id="promptInput" name="prompt" class="PromptInput" placeholder="Ask Me Anything!">
+						</div>
+						<div class="submitSection">
+							<input type="submit" class="SubmitButton" value="Submit">
+							<p class="potatoText">Look At The Potato Go</p>
+						</div>
+						
+						 
+					</form>
+				</div>
+			</section>
+		</main>
+	</div>
+	
+    
+</body>
+</html>
